@@ -130,8 +130,8 @@ class Tree {
 
   void rebalanceOneNode({required Node node}) {
     int l = 0, r = 0;
-    l = getDepth(n1: node.left, depth: 1);
-    r = getDepth(n1: node.right, depth: 1);
+    l = getDepth(n1: node.left, depth:0);
+    r = getDepth(n1: node.right, depth: 0);
 
     int test_b = l - r;
     if (test_b <= 1 && test_b >= -1) {
